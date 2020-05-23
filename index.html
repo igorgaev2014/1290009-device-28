@@ -2,17 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
     <header>
       <nav>
-        <h1>Интернет-магазин DEVICE</h1>
+        <h1 class="visually-hidden">Интернет-магазин DEVICE</h1>
         <img src="img/logo-device.svg" width="163" height="35" alt="DEVICE">
-        <button type="button">Поиск по сайту</button>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="search" name="search" id="search">
+        </form>
+
         <ul>
           <li>
-            <a href="#">Войти</a>
+            <a href="#"><img src="img/user.svg" alt="">Войти</a>
           </li>
           <li>
             <a href="#">Сравнить</a>
@@ -24,7 +28,29 @@
         
         <ul>
           <li>
-            <a href="catalog.html">Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li>
+           <ul>
+            <li>
+              <a href="#">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="#">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="#">Экшн-камеры</a>
+            </li>
+            <li>
+              <a href="#">Фитнес-браслеты</a>
+            </li>
+            <li>
+              <a href="#">Умные часы</a>
+            </li>
+            <li>
+              <a href="#">Квадрокоптеры</a>
+            </li>
+           </ul>
           </li>
           <li>
             <a href="#">Доставка</a>
@@ -36,6 +62,7 @@
             <a href="#">Контакты</a>
           </li>
         </ul>
+       
       </nav>
     </header>
 
@@ -63,6 +90,7 @@
       </section>
 
        <section>
+        <h2 class="visually-hidden">Категории товаров</h2>
         <ul>
           <li>
             <a href="#"><img src="img/popular-vr.svg" width="97" height="55" alt="">Виртуальная реальность</a>
@@ -141,17 +169,34 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img src="img/officemap.png" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-        <button type="button">Закрыть</button>
+        <div>
+          <img src="img/officemap-big.png" width="994" height="593" alt="Карта офиса по адресу улица Строителей, 15">
+          <button type="button">Закрыть</button>
+        </div>
         <br>
         <a href="#">Напишите нам</a>
       </section>
       
+      <div>
+      <form action="https://echo.htmlacademy.ru/courses" method="get">
+        <label for="name">Ваше имя</label>
+        <input type="text" name="name" id="name" value="Имя Фамилия">
+        <label for="email">Ваш e-mail</label>
+        <input type="email" name="email" id="email" value="email@example.com">
+        <label for="text">Текст письма</label>
+        <input type="text" name="text" id="text" value="В свободной форме">
+        
+        <input type="submit" value="Отправить">
+        <button type="button">Закрыть</button>
+      </form>
+    </div>
+
     </main>
     
     <footer>
         <div>
         <img src="img/logo-device.svg" width="163" height="35" alt="DEVICE">
-          <h2>Как нас найти</h2>
+        <h2 class="visually-hidden">Как нас найти</h2>
           <p>г. Москва, ул. Строителей, 15</p>
         </div>
 
@@ -169,30 +214,30 @@
         
         <ul>
           <li>
-            <a href="#"><img src="fb.svg" alt="">Фейсбук</a>
+            <a href="#"><img src="img/fb.svg" alt="Фейсбук"></a>
           </li>
           <li>
-            <a href="#"><img src="instagram.svg" alt="">Инстаграм</a>
+            <a href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
           </li>
           <li>
-            <a href="#"><img src="twitter.svg" alt="">Твиттер</a>
+            <a href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
           </li>
         </ul>
 
          <ul>
           <li>
-            <a href="#"><img src="user.svg" alt="">Войти</a>
+            <a href="#"><img src="img/user.svg" alt="">Войти</a>
           </li>
           <li>
-            <a href="#"><img src="compare.svg" alt="">Сравнить</a>
+            <a href="#"><img src="img/compare.svg" alt="">Сравнить</a>
           </li>
           <li>
-            <a href="#"><img src="cart.svg" alt="">Корзина</a>
+            <a href="#"><img src="img/cart.svg" alt="">Корзина</a>
           </li>
          </ul>
 
         <p>Тел.: +7(495)495-95-95</p>
-        <a href=""><img src="logo-html.svg" alt="">Разработано HTML Academy</a>
+        <a href=""><img src="img/logo-html.svg" alt="Разработано HTML Academy"></a>
     </footer>
   </body>
 </html>
