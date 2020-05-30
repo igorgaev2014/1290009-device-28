@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,31 +9,33 @@
   <title>HTML Academy: Девайс</title>
 </head>
 
-<body>
-  <header class="main-header">
+<body class="page-body">
+  <header class="main-header container">
     <nav class="main-navigation">
       <h1 class="visually-hidden">Интернет-магазин DEVICE</h1>
-      <img src="img/logo-device.svg" width="163" height="35" alt="DEVICE">
-      <form class="header-search-form" action="https://echo.htmlacademy.ru/courses" method="post">
-        <input type="search" name="search" id="search" value="Поиск по сайту">
-      </form>
+      
+        <img class="logo-device colored" src="img/logo-device.svg" width="163" height="35" alt="DEVICE">
+        <form class="header-search-form colored" action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="search" name="search" id="search" value="Поиск по сайту">
+        </form>
 
-      <ul class="header-menu">
-        <li>
-          <a class="header-menu-button" href="#"><img src="img/user.svg" alt="">Войти</a>
-        </li>
-        <li>
-          <a class="header-menu-button" href="#"><img src="img/compare.svg" alt="">Сравнить</a>
-        </li>
-        <li>
-          <a class="header-menu-button" href="#"><img src="img/cart.svg" alt="">Корзина</a>
-        </li>
-      </ul>
+        <ul class="header-menu colored">
+          <li>
+            <a class="header-menu-button" href="#"><img src="img/user.svg" alt="">Войти</a>
+          </li>
+          <li>
+            <a class="header-menu-button" href="#"><img src="img/compare.svg" alt="">Сравнить</a>
+          </li>
+          <li>
+            <a class="header-menu-button" href="#"><img src="img/cart.svg" alt="">Корзина</a>
+          </li>
+        </ul>
 
-      <ul class="header-catalog">
-        <li>
-          <a class="header-catalog-button" href="catalog.html">Каталог товаров</a>
-        </li>
+        <ul class="header-catalog button-first colored">
+          <li>
+            <a class="header-catalog-button" href="catalog.html">Каталог товаров</a>
+          </li>
+          <!--
         <li>
           <ul class="catalog-menu">
             <li>
@@ -55,23 +57,27 @@
               <a class="catalog-menu-button" href="#">Квадрокоптеры</a>
             </li>
           </ul>
-        </li>
-        <li>
-          <a class="header-catalog-button" href="#">Доставка</a>
-        </li>
-        <li>
-          <a class="header-catalog-button" href="#">Гарантия</a>
-        </li>
-        <li>
-          <a class="header-catalog-button" href="#">Контакты</a>
-        </li>
-      </ul>
+        </li>-->
+        </ul>
+
+        <ul class="header-catalog button-row colored">
+          <li>
+            <a class="header-catalog-button" href="#">Доставка</a>
+          </li>
+          <li>
+            <a class="header-catalog-button" href="#">Гарантия</a>
+          </li>
+          <li>
+            <a class="header-catalog-button" href="#">Контакты</a>
+          </li>
+        </ul>
+      
 
     </nav>
   </header>
 
-  <main class="main-content">
-
+  <main class="main-content container">
+<!--
     <section class="main-product-name">
       <h2>01</h2>
       <article>
@@ -129,7 +135,7 @@
       </article>
 
     </section>
-
+  
     <section>
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="popular">
@@ -153,7 +159,8 @@
         </li>
       </ul>
     </section>
-
+    -->
+<!--
     <section>
       <div class="services">
         <div>
@@ -180,26 +187,30 @@
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         <img src="img/credit.svg" width="156" height="188" alt="Кредит">
       </div>
-      <ul class="logotypes">
-        <li>
-          <a href="#"><img src="img/logo-dji.png" width="260" height="100" alt="DJI"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/logo-spgadgets.png" width="260" height="100" alt="SP Gadgets"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/logo-gopro.png" width="260" height="100" alt="GoPro"></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/logo-vive.png" width="260" height="100" alt="Vive"></a>
-        </li>
-      </ul>
+    -->
+      <section>
+        <ul class="logotypes">
+          <li>
+            <a href="#"><img src="img/logo-dji.png" width="260" height="100" alt="DJI"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/logo-spgadgets.png" width="260" height="100" alt="SP Gadgets"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/logo-gopro.png" width="260" height="100" alt="GoPro"></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/logo-vive.png" width="260" height="100" alt="Vive"></a>
+          </li>
+        </ul>
+      </section>
     </section>
 
+  <div class="index-columns">
     <section class="about">
       <h2>О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-      <br>
+      
       <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными
         компаниями:</p>
       <ul class="delivery-companies">
@@ -224,54 +235,63 @@
       <br>
       <a class="button" href="#">Напишите нам</a>
     </section>
+
+  </div>
   </main>
 
-  <footer class="main-footer">
-    <div>
-      <a class="logo-device-button" href="index.html"><img src="img/logo-device.svg" width="163" height="35"
-          alt="DEVICE"></a>
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <address>г. Москва, ул. Строителей, 15</address>
+  <footer class="main-footer ">
+    <div class="container">
+
+      <div class="footer-contacts colored">
+        <a class="logo-device-button" href="index.html"><img src="img/logo-device.svg" width="163" height="35"
+            alt="DEVICE"></a>
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <address">г. Москва, ул. Строителей, 15</address>
+      </div>
+
+      <div class="footer-navigation colored">
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-nav-button" href="#">Доставка</a>
+          </li>
+          <li>
+            <a class="footer-nav-button" href="#">Гарантия</a>
+          </li>
+          <li>
+            <a class="footer-nav-button" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer-social colored">
+          <li>
+            <a class="social-button" href="#"><img src="img/fb.svg" alt="Фейсбук"></a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+          </li>
+          <li>
+            <a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-menu colored">
+        <ul class="footer-menu-buttons colored">
+          <li>
+            <a class="footer-menu-button" href="#"><img src="img/user.svg" alt="">Войти</a>
+          </li>
+          <li>
+            <a class="footer-menu-button" href="#"><img src="img/compare.svg" alt="">Сравнить</a>
+          </li>
+          <li>
+            <a class="footer-menu-button" href="#"><img src="img/cart.svg" alt="">Корзина</a>
+          </li>
+        </ul>
+        <a class="footer-tel colored" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
+        <a class="logo-html-button colored" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg"
+            alt="Разработано HTML Academy"></a>
+      </div>
+
     </div>
-
-    <ul class="footer-nav">
-      <li>
-        <a class="footer-nav-button" href="#">Доставка</a>
-      </li>
-      <li>
-        <a class="footer-nav-button" href="#">Гарантия</a>
-      </li>
-      <li>
-        <a class="footer-nav-button" href="#">Контакты</a>
-      </li>
-    </ul>
-
-    <ul class="footer-social">
-      <li>
-        <a class="social-button" href="#"><img src="img/fb.svg" alt="Фейсбук"></a>
-      </li>
-      <li>
-        <a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
-      </li>
-      <li>
-        <a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
-      </li>
-    </ul>
-
-    <ul class="footer-menu">
-      <li>
-        <a class="footer-menu-button" href="#"><img src="img/user.svg" alt="">Войти</a>
-      </li>
-      <li>
-        <a class="footer-menu-button" href="#"><img src="img/compare.svg" alt="">Сравнить</a>
-      </li>
-      <li>
-        <a class="footer-menu-button" href="#"><img src="img/cart.svg" alt="">Корзина</a>
-      </li>
-    </ul>
-
-    <a class="footer-tel" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
-    <a class="logo-html-button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Разработано HTML Academy"></a>
   </footer>
 </body>
 

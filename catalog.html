@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,22 +9,23 @@
   <title>HTML Academy: Девайс</title>
 </head>
 
-<body>
-  <header class="main-header">
+<body class="page-body">
+  <header class="main-header container">
     <nav class="main-navigation">
       <h1 class="visually-hidden">Интернет-магазин DEVICE</h1>
-      <a class="logo-device" href="index.html">
+
+      <a class="logo-device colored" href="index.html">
         <img src="img/logo-device.svg" width="163" height="35" alt="DEVICE">
       </a>
-      <form class="header-search-form" action="https://echo.htmlacademy.ru/courses" method="post">
+      <form class="header-search-form colored" action="https://echo.htmlacademy.ru/courses" method="post">
         <input type="search" name="search" id="search" value="Поиск по сайту">
       </form>
-      <ul class="header-menu">
+      <ul class="header-menu colored">
         <li>
           <a class="header-menu-button" href="#">Валентин Петухов</a>
         </li>
         <li>
-          <button class="button-logout" type="button">Выйти</button>
+          <a class="button-logout" type="button">Выйти</a>
         </li>
         <li>
           <a class="header-menu-button" href="#">Сравнить</a>
@@ -34,10 +35,11 @@
         </li>
       </ul>
 
-      <ul class="header-catalog">
+      <ul class="header-catalog button-first colored">
         <li>
           <a class="header-catalog-button" href="catalog.html">Каталог товаров</a>
         </li>
+        <!--
         <li>
           <ul class="catalog-menu">
             <li>
@@ -57,9 +59,12 @@
             </li>
             <li>
               <a class="catalog-menu-button" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
+            </li>-->
+      </ul>
+      </li>
+      </ul>
+
+      <ul class="header-catalog button-row colored">
         <li>
           <a class="header-catalog-button" href="#">Доставка</a>
         </li>
@@ -69,101 +74,102 @@
         <li>
           <a class="header-catalog-button" href="#">Контакты</a>
         </li>
+
+      </ul>
       </ul>
     </nav>
   </header>
 
-  <main class="main-content">
-    <section class="main-product-name">
-      <h2>Моноподы для селфи</h2>
-      <ul class="main-nav">
-        <li>
-          <a class="main-nav-button" href="index.html">Главная</a>
-        </li>
-        <li>
-          <a class="main-nav-button" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li>
-          <a class="main-nav-button" href="#">Моноподы для селфи</a>
-        </li>
-      </ul>
-    </section>
-    <!--
-        <section class="main-filter">
-            <h3>ФИЛЬТР:</h3>
+  <main class="main-content container">
+    <div class="page-catalog">
+      <section class="main-product-name colored">
+        <h2>Моноподы для селфи</h2>
+        <ul class="main-nav">
+          <li>
+            <a class="main-nav-button" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a class="main-nav-button" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li>
+            <a class="main-nav-button" href="#">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-filter colored">
+        <h3>ФИЛЬТР:</h3>
+        <div>
+          <h3>СОРТИРОВКА:</h3>
+          <ul class="main-sort">
+            <li>
+              <button type="button">По цене</button>
+            </li>
+            <li>
+              <button type="button">По типу</button>
+            </li>
+            <li>
+              <button type="button">По популярности</button>
+            </li>
+            <li>
+              <button type="button"></button>
+            </li>
+            <li>
+              <button type="button"></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main-product checkboxes colored">
+        <div>
+          <p>Стоимость</p>
+        </div>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
           <div>
-            <h3>СОРТИРОВКА:</h3>
-            <ul class="main-sort">
+            <p>Цвет</p>
+            <ul class="main-checkbox">
               <li>
-                <button type="button">По цене</button>
+                <input type="checkbox" id="black" name="black" checked>
+                <label for="black">Чёрный</label>
               </li>
               <li>
-                <button type="button">По типу</button>
+                <input type="checkbox" id="white" name="white">
+                <label for="white">Белый</label>
               </li>
               <li>
-                <button type="button">По популярности</button>
+                <input type="checkbox" id="blue" name="blue" checked>
+                <label for="blue">Синий</label>
               </li>
               <li>
-                <button type="button"></button>
+                <input type="checkbox" id="red" name="red" checked>
+                <label for="red">Красный</label>
               </li>
               <li>
-                <button type="button"></button>
+                <input type="checkbox" id="pink" name="pink">
+                <label for="pink">Розовый</label>
               </li>
             </ul>
           </div>
-        </section>
-        -->
-    <section class="main-product">
-      <!--
-            <div>
-              <p>Стоимость</p>
-            </div>
-            -->
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <div>
-          <p>Цвет</p>
-          <ul class="main-checkbox">
-            <li>
-              <input type="checkbox" id="black" name="black" checked>
-              <label for="black">Чёрный</label>
-            </li>
-            <li>
-              <input type="checkbox" id="white" name="white">
-              <label for="white">Белый</label>
-            </li>
-            <li>
-              <input type="checkbox" id="blue" name="blue" checked>
-              <label for="blue">Синий</label>
-            </li>
-            <li>
-              <input type="checkbox" id="red" name="red" checked>
-              <label for="red">Красный</label>
-            </li>
-            <li>
-              <input type="checkbox" id="pink" name="pink">
-              <label for="pink">Розовый</label>
-            </li>
-          </ul>
-        </div>
+          <div>
+            <p>Bluetooth</p>
+            <ul class="main-radio-button">
+              <li>
+                <input type="radio" id="yes" name="radio" value="yes" checked>
+                <label for="yes">Есть</label>
+              </li>
+              <li>
+                <input type="radio" id="no" name="radio" value="no">
+                <label for="no">Нет</label>
+              </li>
+            </ul>
+            <button class="button" type="submit">Показать</button>
+          </div>
+        </form>
+      </section>
 
-        <div>
-          <p>Bluetooth</p>
-          <ul class="main-radio-button">
-            <li>
-              <input type="radio" id="yes" name="radio" value="yes" checked>
-              <label for="yes">Есть</label>
-            </li>
-            <li>
-              <input type="radio" id="no" name="radio" value="no">
-              <label for="no">Нет</label>
-            </li>
-          </ul>
-          <button class="button" type="submit">Показать</button>
-        </div>
-      </form>
-
-      <div>
-        <ul class="main-products">
+      <div class="product-page product-page-list colored">
+        <ul class="main-products colored">
           <li>
             <a href="product.html">
               <h3>Любительская селфи-палка</h3>
@@ -210,77 +216,83 @@
           </li>
         </ul>
       </div>
-      <!--
-            <div>
-              <button type="button" disabled>Назад</button>
-              <ul class="main-pages">
-                <li>
-                  <a href="">1</a>
-                </li>
-                <li>
-                  <a href="">2</a>
-                </li>
-                <li>
-                  <a href="">3</a>
-                </li>
-              </ul>
-              <button type="button">Вперед</button>
-            </div>
--->
-    </section>
+
+      <div class="product-pages colored">
+        <button type="button" disabled>Назад</button>
+        <ul class="main-pages">
+          <li>
+            <a href="">1</a>
+          </li>
+          <li>
+            <a href="">2</a>
+          </li>
+          <li>
+            <a href="">3</a>
+          </li>
+        </ul>
+        <button type="button">Вперед</button>
+      </div>
+
+    </div>
   </main>
 
   <footer class="main-footer">
-    <div>
-      <a class="logo-device-button" href="index.html">
-        <img src="img/logo-device.svg" width="163" height="35" alt="DEVICE">
-      </a>
-      <h2 class="visually-hidden">Как нас найти</h2>
-      <address>г. Москва, ул. Строителей, 15</address>
+    <div class="container">
+      <div>
+        <a class="logo-device-button" href="index.html">
+          <img src="img/logo-device.svg" width="163" height="35" alt="DEVICE">
+        </a>
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <address>г. Москва, ул. Строителей, 15</address>
+      </div>
+
+      <ul class="footer-nav">
+        <li>
+          <a class="footer-nav-button" href="#">Доставка</a>
+        </li>
+        <li>
+          <a class="footer-nav-button" href="#">Гарантия</a>
+        </li>
+        <li>
+          <a class="footer-nav-button" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="footer-social">
+        <li>
+          <a class="social-button" href="#"><img src="img/fb.svg" alt="Фейсбук"></a>
+        </li>
+        <li>
+          <a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
+        </li>
+        <li>
+          <a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
+        </li>
+      </ul>
+
+      <ul class="footer-menu">
+        <li>
+          <a class="footer-menu-button" href="#">Валентин Петухов</a>
+        </li>
+        <li>
+          <a class="button-logout" type="button">Выйти</a>
+        </li>
+        <li>
+          <a class="footer-menu-button" href="#"><img src="img/compare.svg" alt="">Сравнить</a>
+        </li>
+        <li>
+          <a class="footer-menu-button" href="#"><img src="img/cart.svg" alt="">Корзина</a>
+        </li>
+      </ul>
+
+      <a class="footer-tel" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
+      <a class="logo-html-button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg"
+          alt="Разработано HTML Academy"></a>
+
+
     </div>
-
-    <ul class="footer-nav">
-      <li>
-        <a class="footer-nav-button" href="#">Доставка</a>
-      </li>
-      <li>
-        <a class="footer-nav-button" href="#">Гарантия</a>
-      </li>
-      <li>
-        <a class="footer-nav-button" href="#">Контакты</a>
-      </li>
-    </ul>
-
-    <ul class="footer-social">
-      <li>
-        <a class="social-button" href="#"><img src="img/fb.svg" alt="Фейсбук"></a>
-      </li>
-      <li>
-        <a class="social-button" href="#"><img src="img/instagram.svg" alt="Инстаграм"></a>
-      </li>
-      <li>
-        <a class="social-button" href="#"><img src="img/twitter.svg" alt="Твиттер"></a>
-      </li>
-    </ul>
-
-    <ul class="footer-menu">
-      <li>
-        <a class="footer-menu-button" href="#">Валентин Петухов</a>
-      </li>
-      <li>
-        <button class="button-logout" type="button">Выйти</button>
-      </li>
-      <li>
-        <a class="footer-menu-button" href="#"><img src="img/compare.svg" alt="">Сравнить</a>
-      </li>
-      <li>
-        <a class="footer-menu-button" href="#"><img src="img/cart.svg" alt="">Корзина</a>
-      </li>
-    </ul>
-
-    <a class="footer-tel" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
-    <a class="logo-html-button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Разработано HTML Academy"></a>
   </footer>
+
 </body>
 
 </html>
