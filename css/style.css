@@ -30,7 +30,7 @@
   /* Global */
 
   body {
-    min-width: 1200px;
+    min-width: 1260px;
     margin: 0;
     padding: 0;
     font-family: "Open Sans", "Arial", sans-serif;
@@ -86,7 +86,7 @@
   }
 
   .container {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
     padding: 0;
   }
@@ -348,6 +348,7 @@
 
   .main-filter ul {
     display: inline;
+    margin-left:74px;
   }
 
   .main-filter h3 {
@@ -367,8 +368,45 @@
     padding: 0;
   }
 
+  .main-sort button {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color:var(--basic-black);
+    border: none;
+  }
+
   .main-sort li {
     display: inline;
+  }
+
+  .main-pages {
+    font-family: "GilroyExtraBold", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    width: 85px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-pages button {
+    font-family: "GilroyExtraBold", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
   }
 
   .checkboxes {
@@ -406,6 +444,8 @@
     background-color: var(--basic-grey-light);
     margin-bottom: 78px;
     margin-left: 72px;
+    padding: 25px 30px;
+
   }
 
 
@@ -425,6 +465,21 @@
   .main-products li {
     min-height: 454px;
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 276px 85px;
+    grid-template-rows: 410px 44px;
+    
+  }
+
+  .main-products a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .main-products p {
+    justify-self: end;
   }
 
   .main-content ul {
@@ -558,12 +613,14 @@
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.05em;
+    display: flex;
+    justify-self: flex-start;
+    margin: 0;
   }
  
   .main-products p {
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
     font-family: "GilroyLight", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -742,7 +799,7 @@
   }
 
   .about h2 {
-    margin-bottom: 57px;
+    margin-bottom: 50px;
   }
 
   .about p {
@@ -755,6 +812,7 @@
     margin: 0;
     margin-top: 60px;
     margin-bottom: 84px;
+    padding-left: 24px;
   }
 
   .delivery-companies li {
@@ -771,7 +829,6 @@
 
   .contacts h2 {
     margin-bottom: 48px;
-    margin-top: 60px;
   }
 
   .contacts p {
