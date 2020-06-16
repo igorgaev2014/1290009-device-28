@@ -73,13 +73,13 @@
       <ul class="main-product-slides">
         <li class="main-product-slide current-slide">
           <div>
-            <h2>Делай селфи, как Бен Стиллер!</h2>
+            <h2>Делай селфи,<br>как Бен Стиллер!</h2>
             <p class="slide-number">01</p>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
               всего
               5
               килограмм.</p>
-            <a class="button" href="">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <dl class="specifications">
               <dt>Длина палки</dt>
               <dd>8,5 м</dd>
@@ -91,96 +91,119 @@
           </div>
           <img src="img/slider-selfie.png" width="384" height="486" alt="Палка для селфи">
         </li>
-        <li class="main-product-slide">
-          <h2>Худеем правильно!</h2>
-          <p class="slide-number">02</p>
+        <li class="main-product-slide current-slide">
+          <div>
+            <h2>Худеем правильно!</h2>
+            <p class="slide-number">02</p>
+            <p>Мотивирующие Фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="button" href="#">Подробнее</a>
+            <dl class="specifications">
+              <dt>Без подзарядки</dt>
+              <dd>48 часов</dd>
+              <dt></dt>
+              <dd></dd>
+              <dt></dt>
+              <dd></dd>
+            </dl>
+          </div>
           <img src="img/slider-bracelet.png" width="345" height="485" alt="Фитнес-браслет">
-          <p>Мотивирующие Фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a class="button" href="">Подробнее</a>
-          <dl class="specifications">
-            <dd>48 часов</dd>
-            <dt>Без подзарядки</dt>
-          </dl>
-        <li class="main-product-slide">
-          <h2>Порхает как бабочка, жалит как пчела!</h2>
-          <p class="slide-number">03</p>
+        </li>
+        <li class="main-product-slide current-slide">
+          <div>
+            <h2>Порхает как бабочка, жалит как пчела!</h2>
+            <p class="slide-number">03</p>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+              камеру.</p>
+            <a class="button" href="#">Подробнее</a>
+            <dl class="specifications">
+              <dt>Дальность полета</dt>
+              <dd>800 м</dd>
+              <dt>Радиус поражения</dt>
+              <dd>50 м</dd>
+              <dt></dt>
+              <dd></dd>
+            </dl>
+          </div>
           <img src="img/slider-copter.png" width="526" height="334" alt="Квадрокоптер">
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
-            камеру.</p>
-          <a class="button" href="">Подробнее</a>
-          <dl class="specifications">
-            <dt>800 м</dt>
-            <dd>Дальность полета</dd>
-            <dt>50 м</dt>
-            <dd>Радиус поражения</dd>
-          </dl>
         </li>
       </ul>
       <div class="slider-controls">
-        <button class="current" type="button" aria-label="Первый слайд"></button>
-        <button type="button" aria-label="Второй слайд"></button>
-        <button type="button" aria-label="Третий слайд"></button>
+        <button class="slider-dots_item" onclick="currentSlide(1)" type="button" aria-label="Первый слайд"></button>
+        <button class="slider-dots_item" onclick="currentSlide(2)" type="button" aria-label="Второй слайд"></button>
+        <button class="slider-dots_item" onclick="currentSlide(3)" type="button" aria-label="Третий слайд"></button>
       </div>
     </section>
     <section class="popular-section container">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="popular">
         <li>
-          <a href="#"><p class="popular-vr"></p>Виртуальная реальность</a>
+          <a href="#">
+            <p class="popular-vr"></p>Виртуальная реальность
+          </a>
         </li>
         <li>
-          <a href="#"><p class="popular-selfie"></p>Моноподы для селфи</a>
+          <a href="#">
+            <p class="popular-selfie"></p>Моноподы для селфи
+          </a>
         </li>
         <li>
-          <a href="#"><p class="popular-action"></p>Экшн-камеры</a>
+          <a href="#">
+            <p class="popular-action"></p>Экшн-камеры
+          </a>
         </li>
         <li>
-          <a href="#"><p class="popular-bracelets"></p>Фитнес-браслеты</a>
+          <a href="#">
+            <p class="popular-bracelets"></p>Фитнес-браслеты
+          </a>
         </li>
         <li>
-          <a href="#"><p class="popular-clocks"></p>Умные часы</a>
+          <a href="#">
+            <p class="popular-clocks"></p>Умные часы
+          </a>
         </li>
         <li>
-          <a href="#"><p class="popular-copters"></p>Квадрокоптеры</a>
+          <a href="#">
+            <p class="popular-copters"></p>Квадрокоптеры
+          </a>
         </li>
       </ul>
     </section>
     <section class="services">
-      <div class="services-list">
+      <div class="services-list container">
         <ul class="services-list-buttons">
           <li>
-            <a class="services-list-button current-service" href="#">Доставка</a>
+            <a href="#" class="services-list-button" onclick="currentService(1)">Доставка</a>
           </li>
           <li>
-            <a class="services-list-button" href="#">Гарантия</a>
+            <a href="#" class="services-list-button" onclick="currentService(2)">Гарантия</a>
           </li>
           <li>
-            <a class="services-list-button" href="#">Кредит</a>
+            <a href="#" class="services-list-button" onclick="currentService(3)">Кредит</a>
           </li>
         </ul>
-      <div class="service">
-          <ul>
+        <div class="service">
+          <ul class="service-list">
             <li class="service-current">
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.</p>
               <img src="img/delivery.svg" width="136" height="164" alt="Доставка">
             </li>
-            <li>
+            <li class="service-current">
               <h2>Гарантия</h2>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый.
                 Товар, не дом, конечно же.</p>
               <img src="img/warranty.svg" width="171" height="195" alt="Гарантия">
             </li>
-            <li>
+            <li class="service-current">
               <h2>Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
                 кредита. Выгодные для нашего банка, разумеется.</p>
               <img src="img/credit.svg" width="156" height="188" alt="Кредит">
             </li>
           </ul>
+        </div>
       </div>
-    </div>
     </section>
     <section class="container">
       <h2 class="visually-hidden">Производители</h2>
@@ -304,8 +327,7 @@
   <div class="modal map-modal">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548883489!2d37.52742395192747!3d55.68703098044033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sus!4v1592121665049!5m2!1sru!2sus"
-      width="994" height="593" style="border:0;" allowfullscreen="" aria-hidden="false"
-      tabindex="0"></iframe>
+      width="994" height="593" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <p><img src="img/officemap-big.png" width="994" height="593" alt="Карта офиса по адресу улица Строителей, 15"></p>
     <button class="map-modal-close-button" type="button" aria-label="Закрыть"></button>
   </div>
