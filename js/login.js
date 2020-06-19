@@ -1,6 +1,6 @@
 var loginLink = document.querySelector(".write-us");
 var loginPopup = document.querySelector(".feedback-modal");
-var loginClose = loginPopup.querySelector(".feedback-modal-close-button");
+var loginClose = loginPopup.querySelector(".feedback-modal-close");
 var loginForm = loginPopup.querySelector(".feedback-modal-form");
 var loginLogin = loginPopup.querySelector(".input-name");
 var loginPassword = loginPopup.querySelector(".email-name");
@@ -57,7 +57,7 @@ window.addEventListener("keydown", function (evt) {
 
 var mapLink = document.querySelector(".contacts-button-map");
 var mapPopup = document.querySelector(".map-modal");
-var mapClose = mapPopup.querySelector(".map-modal-close-button");
+var mapClose = mapPopup.querySelector(".map-modal-close");
 
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
