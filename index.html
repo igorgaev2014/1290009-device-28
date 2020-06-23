@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <title>HTML Academy: Девайс</title>
 </head>
 
 <body class="page-body">
-  <header class="main-header color-outline">
+  <header class="main-header">
     <div class="container">
       <nav class="main-navigation navigation-index">
         <h1 class="visually-hidden">Интернет-магазин DEVICE</h1>
@@ -34,27 +34,26 @@
             <a href="catalog.html">Каталог товаров</a>
           </li>
           <li>
-            <li>
-              <ul class="catalog-menu">
-                <li>
-                  <a class="catalog-menu-button" href="#">Виртуальная реальность</a>
-                </li>
-                <li>
-                  <a class="catalog-menu-button" href="#">Фитнес-браслеты</a>
-                </li>
-                <li>
-                  <a class="catalog-menu-button" href="#">Квадрокоптер</a>
-                </li>
-                <li>
-                  <a class="catalog-menu-button" href="#">Моноподы для селфи</a>
-                </li>
-                <li>
-                  <a class="catalog-menu-button" href="#">Умные часы</a>
-                </li>
-                <li class="action-camera-button">
-                  <a class="catalog-menu-button" href="#">Экшн-камеры</a>
-                </li>
-              </ul>
+            <ul class="catalog-menu">
+              <li>
+                <a class="catalog-menu-button" href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a class="catalog-menu-button" href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a class="catalog-menu-button" href="#">Квадрокоптер</a>
+              </li>
+              <li>
+                <a class="catalog-menu-button" href="#">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a class="catalog-menu-button" href="#">Умные часы</a>
+              </li>
+              <li class="action-camera-button">
+                <a class="catalog-menu-button" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
           </li>
         </ul>
         <ul class="header-catalog button-row">
@@ -126,55 +125,55 @@
         </li>
       </ul>
       <div class="slider-controls">
-        <button class="slider-dots_item" onclick="currentSlide(1)" type="button" aria-label="Первый слайд">
+        <button class="slider-dots-item" onclick="currentSlide(1)" type="button" aria-label="Первый слайд">
           <span class="visually-hidden">Первый слайд</span>
         </button>
-        <button class="slider-dots_item" onclick="currentSlide(2)" type="button" aria-label="Второй слайд">
+        <button class="slider-dots-item" onclick="currentSlide(2)" type="button" aria-label="Второй слайд">
           <span class="visually-hidden">Второй слайд</span>
         </button>
-        <button class="slider-dots_item" onclick="currentSlide(3)" type="button" aria-label="Третий слайд">
+        <button class="slider-dots-item" onclick="currentSlide(3)" type="button" aria-label="Третий слайд">
           <span class="visually-hidden">Третий слайд</span>
         </button>
       </div>
     </section>
-    <section class="popular-section color-outline">
+    <section class="popular-section">
       <div class="container">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="popular">
           <li>
-            <a href="#">
-              <p class="popular-vr"></p>Виртуальная реальность
+            <a class="popular-vr" href="#">
+              Виртуальная реальность
             </a>
           </li>
           <li>
-            <a href="#">
-              <p class="popular-selfie"></p>Моноподы для селфи
+            <a class="popular-selfie" href="#">
+              Моноподы для селфи
             </a>
           </li>
           <li>
-            <a href="#">
-              <p class="popular-action"></p>Экшн-камеры
+            <a class="popular-action" href="#">
+              Экшн-камеры
             </a>
           </li>
           <li>
-            <a href="#">
-              <p class="popular-bracelets"></p>Фитнес-браслеты
+            <a class="popular-bracelets" href="#">
+              Фитнес-браслеты
             </a>
           </li>
           <li>
-            <a href="#">
-              <p class="popular-clocks"></p>Умные часы
+            <a class="popular-clocks" href="#">
+              Умные часы
             </a>
           </li>
           <li>
-            <a href="#">
-              <p class="popular-copters"></p>Квадрокоптеры
+            <a class="popular-copters" href="#">
+              Квадрокоптеры
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="services color-outline">
+    <section class="services">
       <div class="services-list container">
         <ul class="services-list-buttons">
           <li>
@@ -211,7 +210,7 @@
         </div>
       </div>
     </section>
-    <section class="logos color-outline">
+    <section class="logos">
       <div class="container">
         <h2 class="visually-hidden">Производители</h2>
         <ul class="logotypes">
@@ -230,7 +229,7 @@
         </ul>
       </div>
     </section>
-    <div class="info-columns color-outline">
+    <div class="info-columns">
       <div class="index-columns container">
         <section class="about">
           <h2>О нас</h2>
@@ -248,7 +247,7 @@
               ЖелДорЭкспедиция
             </li>
           </ul>
-          <a class="button" href="#">Подробнее о нас</a>
+          <a class="about-us-button button" href="#">Подробнее о нас</a>
         </section>
         <section class="contacts">
           <h2>Контакты</h2>
@@ -257,13 +256,12 @@
             бывает.</p>
           <a class="contacts-button-map"><img src="img/officemap.png" width="560" height="222"
               alt="Карта офиса по адресу улица Строителей, 15"></a>
-          <br>
           <a class="write-us button" href="#">Напишите нам</a>
         </section>
       </div>
     </div>
   </main>
-  <footer class="main-footer color-outline">
+  <footer class="main-footer">
     <div class="footer-container container">
       <a class="logo-device-button" href="index.html">
         <svg class="logo-device-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
@@ -285,17 +283,17 @@
       </ul>
       <ul class="footer-social">
         <li>
-          <a class="social-fb" href="#" aria-label="Фейсбук">
+          <a href="#" class="social-fb">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li>
-          <a class="social-instagram" href="#" aria-label="Инстаграм">
+          <a href="#" class="social-instagram">
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
         <li>
-          <a class="social-twitter" href="#" aria-label="Твиттер">
+          <a href="#" class="social-twitter">
             <span class="visually-hidden">Твиттер</span>
           </a>
         </li>
@@ -323,7 +321,7 @@
             </svg>Корзина</a>
         </li>
       </ul>
-      <a class="footer-tel" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
+      <a class="footer-tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       <a class="logo-html-button" href="https://htmlacademy.ru/intensive/htmlcss">
         <span class="visually-hidden">Разработано HTML Academy</span>
       </a>
@@ -336,10 +334,10 @@
       <label for="email">Ваш e-mail</label>
       <input class="email-name" type="email" name="email" id="email" value="email@example.com">
       <label class="label-text" for="textarea">Текст письма</label>
-      <textarea class="feedback-text" name="textarea">В свободной форме</textarea>
+      <textarea class="feedback-text" name="textarea" id="textarea">В свободной форме</textarea>
       <input class="button" type="submit" value="Отправить">
     </form>
-    <button class="feedback-modal-close close-button" type="button" aria-label="Закрыть"><span
+    <button class="feedback-modal-close close-button" type="button"><span
         class="visually-hidden">Закрыть</span></button>
   </div>
   <div class="modal map-modal">
@@ -347,10 +345,9 @@
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112548883489!2d37.52742395192747!3d55.68703098044033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sus!4v1592121665049!5m2!1sru!2sus"
       width="994" height="593" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <p><img src="img/officemap-big.png" width="994" height="593" alt="Карта офиса по адресу улица Строителей, 15"></p>
-    <button class="map-modal-close close-button" type="button" aria-label="Закрыть"><span
-        class="visually-hidden">Закрыть</span></button>
+    <button class="map-modal-close close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
   </div>
-  <script src="./js/login.js"></script>
+  <script src="./js/login.min.js"></script>
 </body>
 
 </html>
