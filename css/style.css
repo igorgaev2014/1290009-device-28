@@ -1509,6 +1509,7 @@
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.05em;
+    row-gap: 220px;
   }
 
   .popular li {
@@ -1805,7 +1806,6 @@
     background-image: url("../img/user-footer.svg");
     width: 13px;
     height: 14px;
-    opacity: 0.3;
   }
 
   .footer-menu-compare::before {
