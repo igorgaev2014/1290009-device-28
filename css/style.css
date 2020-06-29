@@ -291,10 +291,10 @@
     cursor: pointer;
   }
 
-  .header-search-form input:focus ~ .search-button {
+  .header-search-form input:focus~.search-button {
     display: block;
     z-index: 9999;
-}
+  }
 
   .search-button:hover {
     background-color: var(--basic-black);
